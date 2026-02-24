@@ -1,6 +1,6 @@
 # NWC Tester
 
-A testing platform for Nostr Wallet Connect (NWC) with Lightning Network integration.
+A professional-grade testing platform for Nostr Wallet Connect (NWC) with Lightning Network integration.
 
 ## Features
 
@@ -10,6 +10,7 @@ A testing platform for Nostr Wallet Connect (NWC) with Lightning Network integra
 - Transaction history with detailed information
 - Quick payment interface
 - Light/dark theme support
+- Responsive design for desktop and mobile
 
 ## Tech Stack
 
@@ -20,16 +21,39 @@ A testing platform for Nostr Wallet Connect (NWC) with Lightning Network integra
 - Alby SDK for NWC integration
 - Bitcoin Connect for wallet connections
 
-## Installation
+## Getting Started
 
+### Local Development
+
+1. Clone the repository:
 ```bash
 git clone https://github.com/Dev10-sys/nwc-tester.git
 cd nwc-tester
-npm install
-npm run dev
 ```
 
-Open http://localhost:3000
+2. Install dependencies:
+```bash
+pnpm install
+```
+
+3. Start the development server:
+```bash
+pnpm run dev
+```
+
+## Live Demo
+
+Visit the deployed application: https://nwc-tester.vercel.app/
+
+### Available Scripts
+
+- `pnpm run dev` - Start development server (localhost:3000)
+- `pnpm run build` - Build for production
+- `pnpm run start` - Start production server
+- `pnpm run lint` - Run ESLint
+- `pnpm run lint:fix` - Fix linting issues
+- `pnpm run type-check` - Check TypeScript types
+- `pnpm run format` - Format code with Prettier
 
 ## Usage
 
@@ -40,13 +64,15 @@ Open http://localhost:3000
 
 ## Deployment
 
-Deploy to Vercel:
+### Deploy to Vercel
 
-```bash
-npm run build
-```
+The app is configured for easy deployment to Vercel with zero environment variables needed:
 
-The app works out of the box with no environment variables needed.
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Vercel will automatically detect Next.js and deploy
+
+Live deployment: https://nwc-tester.vercel.app/
 
 ## License
 
