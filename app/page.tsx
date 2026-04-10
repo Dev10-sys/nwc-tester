@@ -116,8 +116,8 @@ export default function Page() {
             <h1 className="text-3xl font-bold text-balance bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent">
               NWC Tester
             </h1>
-            <p className="text-muted-foreground text-pretty text-lg">
-              Professional NWC testing platform with real-time command execution and analytics.
+            <p className="text-muted-foreground text-pretty text-lg max-w-2xl">
+              Connect and test your Nostr Wallet Connect (NWC) integrations in real-time.
             </p>
           </div>
           <ThemeToggle />
@@ -211,8 +211,12 @@ export default function Page() {
         </Tabs>
 
         <Separator />
-        <footer className="text-sm text-muted-foreground text-center space-y-2">
-          <p>Built with Next.js 15 • Powered by Nostr Wallet Connect</p>
+        <footer className="text-sm text-muted-foreground text-center space-y-2 py-8">
+          <div className="flex items-center justify-center gap-2 opacity-70">
+            <span>NWC Tester</span>
+            <span>•</span>
+            <span>Lightning Network Testing Utility</span>
+          </div>
         </footer>
       </div>
     </main>
